@@ -38,14 +38,14 @@ LABEL space.megabyte.type="codeclimate"
 
 FROM codeclimate AS shellcheck
 
+USER root
+
 WORKDIR /work
 
 RUN mv "$(which shellcheck)" /usr/local/bin/shellcheck_original \
   && rm /engine.json /usr/local/bin/codeclimate-shellcheck
 
 COPY local/shellcheck /usr/local/bin/shellcheck
-
-USER root
 
 CMD ["--version"]
 ENTRYPOINT ["shellcheck"]

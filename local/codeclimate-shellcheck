@@ -10,5 +10,5 @@ done
 COUNT="$(echo "$FIND_OUTPUT" | wc -w)"
 if [ "$COUNT" != "0" ]; then
     # shellcheck disable=SC2086
-    shellcheck --format json1 $FIND_OUTPUT | jq --compact-output '.comments[] | .description = .message | .fingerprint = ((.line | tostring) + (.endLine | tostring) + (.column | tostring) + (.endColumn | tostring) + .file) | .severity = .level | .location.path = .file | .location.positions.begin.line = .line | .location.positions.end.line = .endLine | .location.positions.begin.column = .column | .location.positions.end.column = .endColumn | .type = "issue" | .check_name = ("SC" + (.code | tostring)) | .categories = ["Bug Risk"] | .remediation_points = 50000'
+    shellcheck --format json1 $FIND_OUTPUT 2> /dev/null | jq --compact-output '.comments[] | .description = .message | .fingerprint = ((.line | tostring) + (.endLine | tostring) + (.column | tostring) + (.endColumn | tostring) + .file) | .severity = .level | .location.path = .file | .location.positions.begin.line = .line | .location.positions.end.line = .endLine | .location.positions.begin.column = .column | .location.positions.end.column = .endColumn | .type = "issue" | .check_name = ("SC" + (.code | tostring)) | .categories = ["Bug Risk"] | .remediation_points = 50000'
 fi
