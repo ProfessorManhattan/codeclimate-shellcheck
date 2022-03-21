@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+if [ -n "$1" ] && [ "$1" != "." ]; then
+    shift && shellcheck_original "$@"
+else
+FIND_OUTPUT="$(find . -type d \( -path './.autodoc/*' -o -path './.cache/*' -o -path './.common*' -o -path './.config/*' -o -path './.git/*' -o -path './.github/*' -o -path './.gitlab/*' -o -path './.husky/*' -o -path './.modules/*' -o -path './.npm/*' -o -path './.pnpm-store/*' -o -path './.shared/*' -o -path './.task/*' -o -path './.venv/*' -o -path './.vscode/*' -o -path './build/*' -o -path './dist/*' -o -path './node_modules/*' -o -path './roles/*' -o -name pnpm-lock.yaml -o -name package-lock.json -o -name poetry.lock -o -name '.variables.json' -o -name '.git' \) -prune -o -type f \( -name '*.sh' \) | paste -sd " ")"
+for ITEM in $FIND_OUTPUT; do
+    if [ ! -f "$ITEM" ]; then
+        FIND_OUTPUT="$(echo "$FIND_OUTPUT" | sed 's^'"$ITEM"' ^^')"
+    fi
+done
+COUNT="$(echo "$FIND_OUTPUT" | wc -w)"
+if [ "$COUNT" != "0" ]; then
+    # shellcheck disable=SC2086
+    shellcheck_original $FIND_OUTPUT
+fi
+fi

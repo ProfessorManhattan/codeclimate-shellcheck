@@ -1,3 +1,0 @@
-[submodule "data/wiki"]
-	path = data/wiki
-	url = https://github.com/koalaman/shellcheck.wiki.git
