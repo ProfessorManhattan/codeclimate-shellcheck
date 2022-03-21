@@ -26,8 +26,8 @@ ARG VERSION
 LABEL maintainer="Megabyte Labs <help@megabyte.space>"
 LABEL org.opencontainers.image.authors="Brian Zalewski <brian@megabyte.space>"
 LABEL org.opencontainers.image.created=$BUILD_DATE
-LABEL org.opencontainers.image.description="A slim Hadolint standalone linter and a CodeClimate engine for GitLab CI"
-LABEL org.opencontainers.image.documentation="https://github.com/ProfessorManhattan/codeclimate-hadolint/blob/master/README.md"
+LABEL org.opencontainers.image.description="A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI"
+LABEL org.opencontainers.image.documentation="https://github.com/ProfessorManhattan/codeclimate-shellcheck/blob/master/README.md"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.revision=$REVISION
 LABEL org.opencontainers.image.source="https://gitlab.com/megabyte-labs/docker/codeclimate/hadolint.git"
