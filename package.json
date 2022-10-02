@@ -92,7 +92,7 @@
     "description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
     "dockerBaseTag": "shellcheck",
     "dockerLatestSize": {
-      "codeclimate": "5.1M",
+      "codeclimate": "5.0M",
       "shellcheck": "7.0M"
     },
     "dockerSlimCommand": {
@@ -100,8 +100,8 @@
       "shellcheck": "--http-probe=false --exec 'jq --version && cd /work && shellcheck || true' --mount \"$PWD/test/output-sample:/work\" --workdir '/work' --include-exe-file 'local/exe.txt'"
     },
     "dockerSlimSize": {
-      "codeclimate": "3.2M",
-      "shellcheck": "3.2M"
+      "codeclimate": "3.3M",
+      "shellcheck": "3.3M"
     },
     "github_id": "R_kgDOHCpzZw",
     "gitlab_group_id": "14556970",
