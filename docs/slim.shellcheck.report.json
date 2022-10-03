@@ -21,13 +21,13 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:7b76b41d8de223ec6266f43ddaf6450528d156e870f67cc7c07a2a43aad40ea9",
+      "id": "sha256:9f2c483fd1547770b795ef6d21edb32ade480c45bacfbc98e274909c389ec289",
       "tags": ["latest"],
       "names": ["megabytelabs/shellcheck:latest"]
     },
     "size": 20246783,
     "size_human": "20 MB",
-    "create_time": "2022-10-03T03:51:41Z",
+    "create_time": "2022-10-03T03:53:38Z",
     "docker_version": "",
     "architecture": "amd64",
     "user": "root",
@@ -36,11 +36,11 @@
     "labels": {
       "maintainer": "Megabyte Labs <help@megabyte.space>",
       "org.opencontainers.image.authors": "Brian Zalewski <brian@megabyte.space>",
-      "org.opencontainers.image.created": "2022-10-02T23:50:36-04:00",
+      "org.opencontainers.image.created": "2022-10-02T23:52:56-04:00",
       "org.opencontainers.image.description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
       "org.opencontainers.image.documentation": "https://github.com/megabyte-labs/codeclimate-shellcheck/blob/master/README.md",
       "org.opencontainers.image.licenses": "MIT",
-      "org.opencontainers.image.revision": "84ce5684c1128e0b1121a546c9f9c39709b6753a",
+      "org.opencontainers.image.revision": "376431528c4c534b83c6862888d2f607f08ef600",
       "org.opencontainers.image.source": "https://github.com/megabyte-labs/codeclimate-shellcheck.git",
       "org.opencontainers.image.url": "https://megabyte.space",
       "org.opencontainers.image.vendor": "Megabyte Labs",
@@ -57,19 +57,19 @@
   "minified_image": "megabytelabs/shellcheck:slim",
   "minified_image_has_data": true,
   "minified_by": 2.191285221442638,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/7b76b41d8de223ec6266f43ddaf6450528d156e870f67cc7c07a2a43aad40ea9/artifacts",
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/9f2c483fd1547770b795ef6d21edb32ade480c45bacfbc98e274909c389ec289/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "megabytelabs-shellcheck-seccomp.json",
   "apparmor_profile_name": "megabytelabs-shellcheck-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:7b76b41d8de223ec6266f43ddaf6450528d156e870f67cc7c07a2a43aad40ea9",
+      "id": "sha256:9f2c483fd1547770b795ef6d21edb32ade480c45bacfbc98e274909c389ec289",
       "full_name": "megabytelabs/shellcheck:latest",
       "repo_name": "megabytelabs/shellcheck",
       "version_tag": "latest",
       "raw_tags": ["megabytelabs/shellcheck:latest"],
-      "create_time": "2022-10-03T03:51:41Z",
+      "create_time": "2022-10-03T03:53:38Z",
       "new_size": 20246783,
       "new_size_human": "20 MB",
       "instructions": [
@@ -341,8 +341,8 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.creat...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:50:36-04:00\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:50:36-04:00\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:52:56-04:00\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:52:56-04:00\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
@@ -397,9 +397,9 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.revis...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=84ce5684c1128e0b1121a546c9f9c39709b6753a\"]",
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=376431528c4c534b83c6862888d2f607f08ef600\"]",
           "system_commands": [
-            "[\"LABEL\",\"org.opencontainers.image.revision=84ce5684c1128e0b1121a546c9f9c39709b6753a\"]"
+            "[\"LABEL\",\"org.opencontainers.image.revision=376431528c4c534b83c6862888d2f607f08ef600\"]"
           ],
           "comment": "buildkit.dockerfile.v0"
         },
@@ -498,7 +498,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T03:51:41Z",
+          "time": "2022-10-03T03:53:38Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -515,7 +515,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T03:51:41Z",
+          "time": "2022-10-03T03:53:38Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -529,7 +529,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T03:51:41Z",
+          "time": "2022-10-03T03:53:38Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -542,7 +542,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T03:51:41Z",
+          "time": "2022-10-03T03:53:38Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -555,7 +555,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T03:51:41Z",
+          "time": "2022-10-03T03:53:38Z",
           "is_last_instruction": true,
           "is_nop": false,
           "is_exec_form": true,

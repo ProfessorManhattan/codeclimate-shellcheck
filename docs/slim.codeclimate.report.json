@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:4164f17b4c0651382eacb88b5b905b2f006a0f86438845baab44fe2ff257674a",
+      "id": "sha256:742be152d89d58a29ff3dbacbb2204fcaf4a85234b6cbb6088cf55b1f5bc496f",
       "tags": ["latest", "latest-codeclimate"],
       "names": ["codeclimate/codeclimate-shellcheck:latest", "megabytelabs/shellcheck:latest-codeclimate"]
     },
@@ -36,11 +36,11 @@
     "labels": {
       "maintainer": "Megabyte Labs <help@megabyte.space>",
       "org.opencontainers.image.authors": "Brian Zalewski <brian@megabyte.space>",
-      "org.opencontainers.image.created": "2022-10-02T23:50:36-04:00",
+      "org.opencontainers.image.created": "2022-10-02T23:52:56-04:00",
       "org.opencontainers.image.description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
       "org.opencontainers.image.documentation": "https://github.com/megabyte-labs/codeclimate-shellcheck/blob/master/README.md",
       "org.opencontainers.image.licenses": "MIT",
-      "org.opencontainers.image.revision": "84ce5684c1128e0b1121a546c9f9c39709b6753a",
+      "org.opencontainers.image.revision": "376431528c4c534b83c6862888d2f607f08ef600",
       "org.opencontainers.image.source": "https://github.com/megabyte-labs/codeclimate-shellcheck.git",
       "org.opencontainers.image.url": "https://megabyte.space",
       "org.opencontainers.image.vendor": "Megabyte Labs",
@@ -57,14 +57,14 @@
   "minified_image": "megabytelabs/shellcheck:slim-codeclimate",
   "minified_image_has_data": true,
   "minified_by": 1.460164057723212,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/4164f17b4c0651382eacb88b5b905b2f006a0f86438845baab44fe2ff257674a/artifacts",
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/742be152d89d58a29ff3dbacbb2204fcaf4a85234b6cbb6088cf55b1f5bc496f/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "codeclimate-codeclimate-shellcheck-seccomp.json",
   "apparmor_profile_name": "codeclimate-codeclimate-shellcheck-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:4164f17b4c0651382eacb88b5b905b2f006a0f86438845baab44fe2ff257674a",
+      "id": "sha256:742be152d89d58a29ff3dbacbb2204fcaf4a85234b6cbb6088cf55b1f5bc496f",
       "full_name": "codeclimate/codeclimate-shellcheck:latest",
       "repo_name": "codeclimate/codeclimate-shellcheck",
       "version_tag": "latest",
@@ -341,8 +341,8 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.creat...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:50:36-04:00\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:50:36-04:00\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:52:56-04:00\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:52:56-04:00\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
@@ -397,9 +397,9 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.revis...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=84ce5684c1128e0b1121a546c9f9c39709b6753a\"]",
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=376431528c4c534b83c6862888d2f607f08ef600\"]",
           "system_commands": [
-            "[\"LABEL\",\"org.opencontainers.image.revision=84ce5684c1128e0b1121a546c9f9c39709b6753a\"]"
+            "[\"LABEL\",\"org.opencontainers.image.revision=376431528c4c534b83c6862888d2f607f08ef600\"]"
           ],
           "comment": "buildkit.dockerfile.v0"
         },
