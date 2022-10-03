@@ -21,13 +21,13 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:e6521d5db55128134fdb1d6be21a28e7d0a6c0ec41ca92400db0038655c2afdd",
+      "id": "sha256:31089220bf4d290c81e25fa2782ae72f7aaa8d9a3bb66f35c38773c86dbe3815",
       "tags": ["latest"],
       "names": ["megabytelabs/shellcheck:latest"]
     },
     "size": 20246783,
     "size_human": "20 MB",
-    "create_time": "2022-10-02T22:37:25Z",
+    "create_time": "2022-10-03T03:48:37Z",
     "docker_version": "",
     "architecture": "amd64",
     "user": "root",
@@ -36,15 +36,15 @@
     "labels": {
       "maintainer": "Megabyte Labs <help@megabyte.space>",
       "org.opencontainers.image.authors": "Brian Zalewski <brian@megabyte.space>",
-      "org.opencontainers.image.created": "2022-10-02T18:36:13-04:00",
+      "org.opencontainers.image.created": "2022-10-02T23:47:31-04:00",
       "org.opencontainers.image.description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
       "org.opencontainers.image.documentation": "https://github.com/megabyte-labs/codeclimate-shellcheck/blob/master/README.md",
       "org.opencontainers.image.licenses": "MIT",
-      "org.opencontainers.image.revision": "7608cab74d52c77f8dac7ff2097f1bcc0d693e4f",
+      "org.opencontainers.image.revision": "15974a9f896e0133047ac8d603e3fcbd77f119da",
       "org.opencontainers.image.source": "https://github.com/megabyte-labs/codeclimate-shellcheck.git",
       "org.opencontainers.image.url": "https://megabyte.space",
       "org.opencontainers.image.vendor": "Megabyte Labs",
-      "org.opencontainers.image.version": "0.8.0",
+      "org.opencontainers.image.version": "0.8.1",
       "space.megabyte.type": "linter"
     },
     "env_vars": ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],
@@ -57,19 +57,19 @@
   "minified_image": "megabytelabs/shellcheck:slim",
   "minified_image_has_data": true,
   "minified_by": 2.191285221442638,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/e6521d5db55128134fdb1d6be21a28e7d0a6c0ec41ca92400db0038655c2afdd/artifacts",
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/31089220bf4d290c81e25fa2782ae72f7aaa8d9a3bb66f35c38773c86dbe3815/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "megabytelabs-shellcheck-seccomp.json",
   "apparmor_profile_name": "megabytelabs-shellcheck-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:e6521d5db55128134fdb1d6be21a28e7d0a6c0ec41ca92400db0038655c2afdd",
+      "id": "sha256:31089220bf4d290c81e25fa2782ae72f7aaa8d9a3bb66f35c38773c86dbe3815",
       "full_name": "megabytelabs/shellcheck:latest",
       "repo_name": "megabytelabs/shellcheck",
       "version_tag": "latest",
       "raw_tags": ["megabytelabs/shellcheck:latest"],
-      "create_time": "2022-10-02T22:37:25Z",
+      "create_time": "2022-10-03T03:48:37Z",
       "new_size": 20246783,
       "new_size_human": "20 MB",
       "instructions": [
@@ -341,8 +341,8 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.creat...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T18:36:13-04:00\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T18:36:13-04:00\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:47:31-04:00\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-02T23:47:31-04:00\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
@@ -397,9 +397,9 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.revis...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=7608cab74d52c77f8dac7ff2097f1bcc0d693e4f\"]",
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=15974a9f896e0133047ac8d603e3fcbd77f119da\"]",
           "system_commands": [
-            "[\"LABEL\",\"org.opencontainers.image.revision=7608cab74d52c77f8dac7ff2097f1bcc0d693e4f\"]"
+            "[\"LABEL\",\"org.opencontainers.image.revision=15974a9f896e0133047ac8d603e3fcbd77f119da\"]"
           ],
           "comment": "buildkit.dockerfile.v0"
         },
@@ -453,8 +453,8 @@
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.versi...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.version=0.8.0\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.version=0.8.0\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.version=0.8.1\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.version=0.8.1\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
@@ -498,7 +498,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T22:37:24Z",
+          "time": "2022-10-03T03:48:37Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -515,7 +515,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T22:37:25Z",
+          "time": "2022-10-03T03:48:37Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -529,7 +529,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T22:37:25Z",
+          "time": "2022-10-03T03:48:37Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -542,7 +542,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T22:37:25Z",
+          "time": "2022-10-03T03:48:37Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -555,7 +555,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T22:37:25Z",
+          "time": "2022-10-03T03:48:37Z",
           "is_last_instruction": true,
           "is_nop": false,
           "is_exec_form": true,
