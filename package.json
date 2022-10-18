@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@megabytelabs/codeclimate-shellcheck",
-  "version": "0.8.0",
+  "version": "2.0.0",
   "description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
@@ -116,7 +116,7 @@
     "slug": "shellcheck",
     "subgroup": "codeclimate",
     "title": "Shellcheck CodeClimate Engine",
-    "versionCommand": "docker run -it megabytelabs/shellcheck:latest shellcheck --version | grep version: | sed 's/version: //'"
+    "versionCommand": "jq -r '.version' package.json"
   },
   "changelog": {
     "displayTypes": [

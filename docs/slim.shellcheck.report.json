@@ -21,13 +21,13 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806",
+      "id": "sha256:b3487feb32b9ed3771bd76123290f36a3b73c35246f049281b3b3eea1363d880",
       "tags": ["latest"],
       "names": ["megabytelabs/shellcheck:latest"]
     },
     "size": 22373498,
     "size_human": "22 MB",
-    "create_time": "2022-10-18T08:02:23Z",
+    "create_time": "2022-10-18T08:50:16Z",
     "docker_version": "",
     "architecture": "amd64",
     "user": "root",
@@ -36,11 +36,11 @@
     "labels": {
       "maintainer": "Megabyte Labs <help@megabyte.space>",
       "org.opencontainers.image.authors": "Brian Zalewski <brian@megabyte.space>",
-      "org.opencontainers.image.created": "2022-10-18T02:09:11-04:00",
+      "org.opencontainers.image.created": "2022-10-18T04:48:59-04:00",
       "org.opencontainers.image.description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
       "org.opencontainers.image.documentation": "https://github.com/megabyte-labs/codeclimate-shellcheck/blob/master/README.md",
       "org.opencontainers.image.licenses": "MIT",
-      "org.opencontainers.image.revision": "3ec9e22ad148e94db9d29be9ad6eac20bd242ed4",
+      "org.opencontainers.image.revision": "873415f2e6525d76ee450df9370e1465676dc4f5",
       "org.opencontainers.image.source": "https://github.com/megabyte-labs/codeclimate-shellcheck.git",
       "org.opencontainers.image.url": "https://megabyte.space",
       "org.opencontainers.image.vendor": "Megabyte Labs",
@@ -57,19 +57,19 @@
   "minified_image": "megabytelabs/shellcheck:slim",
   "minified_image_has_data": true,
   "minified_by": 2.0978270959379404,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806/artifacts",
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/b3487feb32b9ed3771bd76123290f36a3b73c35246f049281b3b3eea1363d880/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "megabytelabs-shellcheck-seccomp.json",
   "apparmor_profile_name": "megabytelabs-shellcheck-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806",
+      "id": "sha256:b3487feb32b9ed3771bd76123290f36a3b73c35246f049281b3b3eea1363d880",
       "full_name": "megabytelabs/shellcheck:latest",
       "repo_name": "megabytelabs/shellcheck",
       "version_tag": "latest",
       "raw_tags": ["megabytelabs/shellcheck:latest"],
-      "create_time": "2022-10-18T08:02:23Z",
+      "create_time": "2022-10-18T08:50:16Z",
       "new_size": 22373498,
       "new_size_human": "22 MB",
       "instructions": [
@@ -167,7 +167,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T06:11:19Z",
+          "time": "2022-10-02T06:39:28Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -181,7 +181,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:37Z",
+          "time": "2022-10-18T08:49:12Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -195,7 +195,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -215,7 +215,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -228,7 +228,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -241,7 +241,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -254,7 +254,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -267,7 +267,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -280,7 +280,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -293,7 +293,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -306,7 +306,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -319,7 +319,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -334,20 +334,20 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.creat...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-18T02:09:11-04:00\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-18T02:09:11-04:00\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-18T04:48:59-04:00\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-18T04:48:59-04:00\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -362,7 +362,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -377,7 +377,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -390,22 +390,22 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.revis...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=3ec9e22ad148e94db9d29be9ad6eac20bd242ed4\"]",
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=873415f2e6525d76ee450df9370e1465676dc4f5\"]",
           "system_commands": [
-            "[\"LABEL\",\"org.opencontainers.image.revision=3ec9e22ad148e94db9d29be9ad6eac20bd242ed4\"]"
+            "[\"LABEL\",\"org.opencontainers.image.revision=873415f2e6525d76ee450df9370e1465676dc4f5\"]"
           ],
           "comment": "buildkit.dockerfile.v0"
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -420,7 +420,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -433,7 +433,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -446,7 +446,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -459,7 +459,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -472,7 +472,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -485,7 +485,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:01:39Z",
+          "time": "2022-10-18T08:49:14Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -498,7 +498,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:02:23Z",
+          "time": "2022-10-18T08:50:16Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -515,7 +515,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:02:23Z",
+          "time": "2022-10-18T08:50:16Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -529,7 +529,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:02:23Z",
+          "time": "2022-10-18T08:50:16Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -542,7 +542,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:02:23Z",
+          "time": "2022-10-18T08:50:16Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -555,7 +555,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-18T08:02:23Z",
+          "time": "2022-10-18T08:50:16Z",
           "is_last_instruction": true,
           "is_nop": false,
           "is_exec_form": true,
