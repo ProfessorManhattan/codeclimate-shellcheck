@@ -7,6 +7,7 @@ COPY local/codeclimate-shellcheck /usr/local/bin/codeclimate-shellcheck
 
 RUN adduser --uid 9000 --gecos "" --disabled-password app \
   && apk --no-cache add \
+  bash~=5 \
   jq~=1 \
   && VERSION="$(shellcheck --version | grep version: | sed 's/version: //')" \
   && jq --arg version "$VERSION" '.version = $version' > /engine.json < ./engine.json \

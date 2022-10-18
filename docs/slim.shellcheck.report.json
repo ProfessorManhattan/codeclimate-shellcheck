@@ -21,13 +21,13 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:15b7e291ba90d01de4a29c40836d590f28aaf5b81b5898efbf12bd133da85af7",
+      "id": "sha256:c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806",
       "tags": ["latest"],
       "names": ["megabytelabs/shellcheck:latest"]
     },
-    "size": 20246783,
-    "size_human": "20 MB",
-    "create_time": "2022-10-03T04:01:16Z",
+    "size": 22373498,
+    "size_human": "22 MB",
+    "create_time": "2022-10-18T08:02:23Z",
     "docker_version": "",
     "architecture": "amd64",
     "user": "root",
@@ -36,15 +36,15 @@
     "labels": {
       "maintainer": "Megabyte Labs <help@megabyte.space>",
       "org.opencontainers.image.authors": "Brian Zalewski <brian@megabyte.space>",
-      "org.opencontainers.image.created": "2022-10-03T00:00:38-04:00",
+      "org.opencontainers.image.created": "2022-10-18T02:09:11-04:00",
       "org.opencontainers.image.description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
       "org.opencontainers.image.documentation": "https://github.com/megabyte-labs/codeclimate-shellcheck/blob/master/README.md",
       "org.opencontainers.image.licenses": "MIT",
-      "org.opencontainers.image.revision": "455969ddbc1498a3d82bd19b0f2e3afdd193d850",
+      "org.opencontainers.image.revision": "3ec9e22ad148e94db9d29be9ad6eac20bd242ed4",
       "org.opencontainers.image.source": "https://github.com/megabyte-labs/codeclimate-shellcheck.git",
       "org.opencontainers.image.url": "https://megabyte.space",
       "org.opencontainers.image.vendor": "Megabyte Labs",
-      "org.opencontainers.image.version": "1.0.1",
+      "org.opencontainers.image.version": "0.8.0",
       "space.megabyte.type": "linter"
     },
     "env_vars": ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],
@@ -52,26 +52,26 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 9239684,
-  "minified_image_size_human": "9.2 MB",
+  "minified_image_size": 10665082,
+  "minified_image_size_human": "11 MB",
   "minified_image": "megabytelabs/shellcheck:slim",
   "minified_image_has_data": true,
-  "minified_by": 2.191285221442638,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/15b7e291ba90d01de4a29c40836d590f28aaf5b81b5898efbf12bd133da85af7/artifacts",
+  "minified_by": 2.0978270959379404,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "megabytelabs-shellcheck-seccomp.json",
   "apparmor_profile_name": "megabytelabs-shellcheck-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:15b7e291ba90d01de4a29c40836d590f28aaf5b81b5898efbf12bd133da85af7",
+      "id": "sha256:c08faa5008897a6d3b48cbe74d69c7db80099caffb1b649ef604b120ee8ff806",
       "full_name": "megabytelabs/shellcheck:latest",
       "repo_name": "megabytelabs/shellcheck",
       "version_tag": "latest",
       "raw_tags": ["megabytelabs/shellcheck:latest"],
-      "create_time": "2022-10-03T04:01:16Z",
-      "new_size": 20246783,
-      "new_size_human": "20 MB",
+      "create_time": "2022-10-18T08:02:23Z",
+      "new_size": 22373498,
+      "new_size_human": "22 MB",
       "instructions": [
         {
           "type": "ADD",
@@ -167,7 +167,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:28Z",
+          "time": "2022-10-18T06:11:19Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -181,13 +181,13 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:28Z",
+          "time": "2022-10-18T08:01:37Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 1623,
-          "size_human": "1.6 kB",
+          "size": 1467,
+          "size_human": "1.5 kB",
           "command_snippet": "RUN [\"COPY\",\"local/codeclimate-shellcheck\",\"...",
           "command_all": "RUN [\"COPY\",\"local/codeclimate-shellcheck\",\"/usr/local/bin/codeclimate-shellcheck\"]",
           "system_commands": ["[\"COPY\",\"local/codeclimate-shellcheck\",\"/usr/local/bin/codeclimate-shellcheck\"]"],
@@ -195,18 +195,18 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 1142650,
-          "size_human": "1.1 MB",
+          "size": 3269575,
+          "size_human": "3.3 MB",
           "command_snippet": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"adduser\",\"--uid\",...",
-          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"adduser\",\"--uid\",\"9000\",\"--gecos\",\"\",\"--disabled-password\",\"app\",\"&&\",\"apk\",\"--no-cache\",\"add\",\"jq~=1\",\"&&\",\"VERSION=$(shellcheck --version | grep version: | sed 's/version: //')\",\"&&\",\"jq\",\"--arg\",\"version\",\"$VERSION\",\".version = $version\",\">\",\"/engine.json\",\"<\",\"./engine.json\",\"&&\",\"rm\",\"./engine.json\"]",
+          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"adduser\",\"--uid\",\"9000\",\"--gecos\",\"\",\"--disabled-password\",\"app\",\"&&\",\"apk\",\"--no-cache\",\"add\",\"bash~=5\",\"jq~=1\",\"&&\",\"VERSION=$(shellcheck --version | grep version: | sed 's/version: //')\",\"&&\",\"jq\",\"--arg\",\"version\",\"$VERSION\",\".version = $version\",\">\",\"/engine.json\",\"<\",\"./engine.json\",\"&&\",\"rm\",\"./engine.json\"]",
           "system_commands": [
             "[\"RUN\",\"/bin/sh\",\"-c\",\"adduser\",\"--uid\",\"9000\",\"--gecos\",\"\",\"--disabled-password\",\"app\",\"",
-            "\",\"apk\",\"--no-cache\",\"add\",\"jq~=1\",\"",
+            "\",\"apk\",\"--no-cache\",\"add\",\"bash~=5\",\"jq~=1\",\"",
             "\",\"VERSION=$(shellcheck --version | grep version: | sed 's/version: //')\",\"",
             "\",\"jq\",\"--arg\",\"version\",\"$VERSION\",\".version = $version\",\">\",\"/engine.json\",\"<\",\"./engine.json\",\"",
             "\",\"rm\",\"./engine.json\"]"
@@ -215,7 +215,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -228,7 +228,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -241,7 +241,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -254,7 +254,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -267,7 +267,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -280,7 +280,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -293,7 +293,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -306,7 +306,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -319,7 +319,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -334,20 +334,20 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.creat...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-03T00:00:38-04:00\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-03T00:00:38-04:00\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.created=2022-10-18T02:09:11-04:00\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.created=2022-10-18T02:09:11-04:00\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -362,7 +362,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -377,7 +377,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -390,22 +390,22 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.revis...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=455969ddbc1498a3d82bd19b0f2e3afdd193d850\"]",
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.revision=3ec9e22ad148e94db9d29be9ad6eac20bd242ed4\"]",
           "system_commands": [
-            "[\"LABEL\",\"org.opencontainers.image.revision=455969ddbc1498a3d82bd19b0f2e3afdd193d850\"]"
+            "[\"LABEL\",\"org.opencontainers.image.revision=3ec9e22ad148e94db9d29be9ad6eac20bd242ed4\"]"
           ],
           "comment": "buildkit.dockerfile.v0"
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -420,7 +420,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -433,7 +433,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -446,20 +446,20 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
           "command_snippet": "RUN [\"LABEL\",\"org.opencontainers.image.versi...",
-          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.version=1.0.1\"]",
-          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.version=1.0.1\"]"],
+          "command_all": "RUN [\"LABEL\",\"org.opencontainers.image.version=0.8.0\"]",
+          "system_commands": ["[\"LABEL\",\"org.opencontainers.image.version=0.8.0\"]"],
           "comment": "buildkit.dockerfile.v0"
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -472,7 +472,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:39:29Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -485,7 +485,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-02T06:40:31Z",
+          "time": "2022-10-18T08:01:39Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -498,7 +498,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T04:01:16Z",
+          "time": "2022-10-18T08:02:23Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -515,13 +515,13 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T04:01:16Z",
+          "time": "2022-10-18T08:02:23Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 902,
-          "size_human": "902 B",
+          "size": 848,
+          "size_human": "848 B",
           "command_snippet": "RUN [\"COPY\",\"local/shellcheck\",\"/usr/local/b...",
           "command_all": "RUN [\"COPY\",\"local/shellcheck\",\"/usr/local/bin/shellcheck\"]",
           "system_commands": ["[\"COPY\",\"local/shellcheck\",\"/usr/local/bin/shellcheck\"]"],
@@ -529,7 +529,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T04:01:16Z",
+          "time": "2022-10-18T08:02:23Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -542,7 +542,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T04:01:16Z",
+          "time": "2022-10-18T08:02:23Z",
           "is_nop": false,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -555,7 +555,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-10-03T04:01:16Z",
+          "time": "2022-10-18T08:02:23Z",
           "is_last_instruction": true,
           "is_nop": false,
           "is_exec_form": true,

@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@megabytelabs/codeclimate-shellcheck",
-  "version": "1.0.1",
+  "version": "0.8.0",
   "description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
@@ -92,16 +92,16 @@
     "description": "A slim Shellcheck standalone linter and a CodeClimate engine for GitLab CI",
     "dockerBaseTag": "shellcheck",
     "dockerLatestSize": {
-      "codeclimate": "5.0M",
-      "shellcheck": "7.0M"
+      "codeclimate": "5.8M",
+      "shellcheck": "7.8M"
     },
     "dockerSlimCommand": {
-      "codeclimate": "--http-probe=false --exec 'jq --version && cd /work && codeclimate-shellcheck' --mount \"$PWD/test/output-sample:/work\" --workdir '/work' --include-exe-file 'local/exe.txt'",
+      "codeclimate": "--http-probe=false --exec 'bash --version && jq --version && cd /work && codeclimate-shellcheck' --mount \"$PWD/test/output-sample:/work\" --workdir '/work' --include-exe-file 'local/exe.txt'",
       "shellcheck": "--http-probe=false --exec 'jq --version && cd /work && shellcheck || true' --mount \"$PWD/test/output-sample:/work\" --workdir '/work' --include-exe-file 'local/exe.txt'"
     },
     "dockerSlimSize": {
-      "codeclimate": "3.3M",
-      "shellcheck": "3.3M"
+      "codeclimate": "3.9M",
+      "shellcheck": "3.9M"
     },
     "github_id": "R_kgDOHCpzZw",
     "gitlab_group_id": "14556970",

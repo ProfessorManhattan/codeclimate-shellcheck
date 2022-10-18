@@ -1,17 +1,11 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-# TODO Add categories / remediation_points / content for each type
-FIND_OUTPUT="$(find . -type d \( -path './.autodoc/*' -o -path './.cache/*' -o -path './.common*' -o -path './.config/*' -o -path './.git/*' -o -path './.github/*' -o -path './.gitlab/*' -o -path './.husky/*' -o -path './.modules/*' -o -path './.npm/*' -o -path './.pnpm-store/*' -o -path './.shared/*' -o -path './.task/*' -o -path './.venv/*' -o -path './.vscode/*' -o -path './build/*' -o -path './dist/*' -o -path './node_modules/*' -o -path './roles/*' -o -name pnpm-lock.yaml -o -name package-lock.json -o -name poetry.lock -o -name '.variables.json' -o -name '.git' \) -prune -o -type f \( -name '*.sh' \) | paste -sd " ")"
-for ITEM in $FIND_OUTPUT; do
-    if [ ! -f "$ITEM" ]; then
-        FIND_OUTPUT="$(echo "$FIND_OUTPUT" | sed 's^'"$ITEM"' ^^')"
+TMP="$(mktemp)"
+while read ITEM; do
+    if [ -f "$ITEM" ]; then
+      # shellcheck disable=SC2086
+      shellcheck --format json1 $ITEM 2> /dev/null | jq --compact-output '.comments[] | .description = .message | .fingerprint = ((.line | tostring) + (.endLine | tostring) + (.column | tostring) + (.endColumn | tostring)) | .location.path = .file | .location.positions.begin.line = .line | .location.positions.end.line = .endLine | .location.positions.begin.column = .column | .location.positions.end.column = .endColumn | .type = "issue" | .check_name = ("SC" + (.code | tostring)) | .categories = ["Bug Risk"] | .remediation_points = 50000 | del(.fix) | del(.file) | del(.message) | del(.line) | del(.code) | del(.endLine) | del(.column) | del(.endColumn) | del(.level)' | while read INPUT; do
+        printf "$INPUT\0"
+      done
     fi
-done
-COUNT="$(echo "$FIND_OUTPUT" | wc -w)"
-if [ "$COUNT" != "0" ]; then
-    # shellcheck disable=SC2086
-    shellcheck --format json1 $FIND_OUTPUT 2> /dev/null | jq --compact-output '.comments[] | .description = .message | .fingerprint = ((.line | tostring) + (.endLine | tostring) + (.column | tostring) + (.endColumn | tostring) + .file) | .severity = .level | .location.path = .file | .location.positions.begin.line = .line | .location.positions.end.line = .endLine | .location.positions.begin.column = .column | .location.positions.end.column = .endColumn | .type = "issue" | .check_name = ("SC" + (.code | tostring)) | .categories = ["Bug Risk"] | .remediation_points = 50000' | while read INPUT; do
-      OUTPUT="${OUTPUT}${INPUT}"
-    done
-    echo "${OUTPUT}"
-fi
+done< <(find . -type d \( -path './.autodoc/*' -o -path './.cache/*' -o -path './.common*' -o -path './.config/*' -o -path './.git/*' -o -path './.github/*' -o -path './.gitlab/*' -o -path './.husky/*' -o -path './.modules/*' -o -path './.npm/*' -o -path './.pnpm-store/*' -o -path './.shared/*' -o -path './.task/*' -o -path './.venv/*' -o -path './.vscode/*' -o -path './build/*' -o -path './dist/*' -o -path './node_modules/*' -o -path './roles/*' -o -name pnpm-lock.yaml -o -name package-lock.json -o -name poetry.lock -o -name '.variables.json' -o -name '.git' \) -prune -o -type f \( -name '*.sh' \))
